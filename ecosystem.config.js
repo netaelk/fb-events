@@ -15,7 +15,7 @@ module.exports = {
         ref: 'origin/master',
         repo: 'git@github.com:netaelk/fb-events.git',
         path: '/home/ubuntu/server/fb-events',
-        'post-deploy': 'cd public/events-fetcher && npm install && cd ../.. && npm install && pm2 startOrRestart ecosystem.config.js'
+        'post-deploy': 'cd ./public/events-fetcher && npm install && cd ../.. && npm install && pm2 startOrRestart ecosystem.config.js'
       }
     }
   }
