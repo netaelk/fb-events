@@ -1,0 +1,26 @@
+{
+  "name": "events-fetcher",
+  "version": "1.0.0",
+  "description": "fetch fb events",
+  "main": "app.js",
+  "bin": {
+    "events-fetcher": "www.js"
+  },
+  "scripts": {
+    "start": "cd public/events-app && ng build && cd ../.. && node bin/www.js",
+    "events-service": "node node_modules/facebook-events-by-location/index.js",
+    "server": "node bin/www.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Netael Kakon",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "config": "^1.26.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.4",
+    "facebook-events-by-location": "^0.7.0",
+    "http": "0.0.0",
+    "request": "^2.81.0"
+  }
+}
