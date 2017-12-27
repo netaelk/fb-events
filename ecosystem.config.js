@@ -1,11 +1,13 @@
 module.exports = {
     apps: [{
       name: 'events-service',
-      script: 'npm run events-service'
+      script: 'npm',
+      args: 'run events-service'
     },
     {
         name: 'fb-events',
-        script: 'npm start'
+        script: 'npm',
+        args: 'start'
     }],
     deploy: {
       production: {
